@@ -16,6 +16,7 @@ body {
     font-size: 4rem;
   }
   
+
   #card-container {
     margin: auto;
     width: 869px;
@@ -25,6 +26,7 @@ body {
   
   .form-container {
     margin: 2rem 7%;
+    align-content: center;
   
   }
   
