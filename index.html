@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Petit Formal Script" rel="stylesheet">
+	
+		<link rel="stylesheet" href="./css/skeleton.css">
+		<link rel="stylesheet" href="./css/font.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/card.css">
+
+	</head>
+	<body>
+		<h1>RX Greeting Cards</h1>
+
+		<div>
+				<form>
+					<label for="title">Name:</label>
+					<input type="text" id="title" name="title">
+					<label for="from">Arabic Name:</label>
+					<input type="text" id="from" name="from">
+
+					<button id="save-button">Save Card</button>
+				</form>
+		</div>
+
+		<div id="card-container">
+				<img src="./img/eid-card.jpg" id="card-image">
+				<h3 id="card-title"></h3>
+				<h3 id="card-from"></h3>
+			
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+		<script src="./js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "LoewNextArabicRegular";
+    src: url('../fonts/LoewNextArabic-Regular.ttf');
+}
+
+@font-face {
+    font-family: "LoewNextArabicExtraBold";
+    src: url('../fonts/LoewNextArabic-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: "QuicheFineRegular";
+    src: url('../fonts/QuicheSans-Regular.otf');
+}
+
+
+
+h2, h3 {
+    color: white;
+    font-family: 'QuicheFineRegular';
+  }
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  
+  }
+  p {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+  }
+  
+
+    #card-from {
+        font-family: 'LoewNextArabicRegular'
+    }
+
+
+    #card-title {
+        font-family: 'QuicheFineRegular'
+    }
+
+  #card-container {
+    background-color: white;
+    position: relative;
+    text-align: center;
+  }
+  
+  img {
+    height: 1086px;
+    width: 869px;
+    margin: 0;
+    float: center;
+    object-fit: cover;
+  }
+  
+  
+  #card-title {
+    position: absolute;
+  top: 40%;
+    left: 40%;
+
+  }
+
+  #card-from {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+  }

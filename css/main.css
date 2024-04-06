@@ -1,0 +1,46 @@
+body {
+    margin: auto;
+    padding: 4rem;
+    width: 1000px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  h1 {
+    color: 6c16e3;
+    font-size: 4rem;
+  }
+  
+  #card-container {
+    margin: auto;
+    width: 869px;
+    max-height: 1086px;
+    border: 1px solid grey;
+  }
+  
+  .form-container {
+    margin: 2rem 7%;
+  
+  }
+  
+  
+  form, input, textarea, select {
+    width: 400px;
+    margin: 1rem 0;
+  
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: darkgreen !important;
+  }
+  
+  
+  button:hover {
+    background-color: 6c16e3;
+    color: black;
+    border: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
