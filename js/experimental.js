@@ -24,10 +24,20 @@ function downloadURI(uri, name) {
   link.click();
 }
 
+function saveScreenshot(canvas) {
+  const fileName = "image";
+  const link = document.createElement("a");
+  link.download = fileName + ".jpg";
+  console.log(canvas);
+  canvas.toBlob(function (blob) {
+      console.log(blob);
+      link.href = URL.createObjectURL(blob);
+      link.click();
+  });
+}
+
 saveButton.addEventListener('click', function(event) {
   event.preventDefault();
-  html2canvas(cardContainer).then(function(canvas) {
-      var myImage = canvas.toDataURL("image/jpg");
-      downloadURI("data:" + myImage, "EidCard.jpg");
+
+  html2canvas(cardContainer).then(saveScreenshot);
   });
-});

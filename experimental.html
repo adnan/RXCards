@@ -16,23 +16,27 @@
 
 	</head>
 	<body>
-		<h1>RX Greeting Cards</h1>
-
+        <div class="header">
+            <img src="./img/logo.png" alt="logo" />
+            <h1>Eid Greeting Card</h1>
+          </div>
+<br>
 		<div class="form-container">
 				<form>
-					<label for="title">Name:</label>
-					<input type="text" id="title" name="title">
-					<label for="from">Arabic Name:</label>
-					<input type="text" id="from" name="from">
+					<label for="title" class="input-label">Name:</label>
+					<input type="text" id="title" name="title" class="input-box">
+					
+                    <label for="from" class="input-label">Arabic Name:</label>
+					<input type="text" id="from" name="from" class="input-box">
 
-					<button id="save-button">Save Card</button>
+					<button id="save-button">Download Card</button>
 				</form>
 		</div>
 
 		<div id="card-container">
 				<img src="./img/eid-card.jpg" id="card-image">
 				<h3 id="card-from"></h3>
-				<h3 id="card-title"></h3>ß
+				<h3 id="card-title"></h3>
 			
 		</div>
 
