@@ -3,7 +3,12 @@ body {
     padding: 4rem;
     width: 1000px;
     font-size: 16px;
+    color: white;
     background-color: white;
+    background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   }
   
   h1 {
@@ -35,9 +40,16 @@ body {
   }
   
   
-  button:hover {
-    background-color: 6c16e3;
+  button {
+    background-color: white;
     color: black;
+    border: white;
+  }
+
+
+  button:hover {
+    background-color: black;
+    color: white;
     border: white;
   }
   

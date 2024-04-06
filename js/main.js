@@ -8,8 +8,6 @@ var formFrom = document.getElementById('from');
 
 var saveButton = document.getElementById('save-button');
 
-
-
 formTitle.addEventListener('keyup', function(event) {
   cardTitle.innerText = event.target.value;
 })
@@ -28,7 +26,7 @@ function downloadURI(uri, name) {
 
 saveButton.addEventListener('click', function(event) {
   event.preventDefault();
-  html2canvas(cardContainer, {
+  html2canvas(cardContainer, { scale:2,
     onrendered: function(canvas) {
       var myImage = canvas.toDataURL("image/jpg");
       downloadURI("data:" + myImage, "EidCard.jpg");
