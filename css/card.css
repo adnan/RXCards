@@ -13,6 +13,21 @@
     src: url('../fonts/QuicheSans-Regular.otf');
 }
 
+@font-face {
+    font-family: "LoewNextRegular";
+    src: url('../fonts/LoewNext-Regular.otf');
+}
+
+@font-face {
+    font-family: "LoewNextThin";
+    src: url('../fonts/LoewNext-Thin.otf');
+}
+
+@font-face {
+    font-family: "LoewNextArabicThin";
+    src: url('../fonts/LoewNextArabicThin.otf');
+}
+
 
 
 h2, h3 {
@@ -24,7 +39,7 @@ h2, h3 {
     font-size: 2.5rem;
   }
   h3 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   
   }
   p {
@@ -34,12 +49,12 @@ h2, h3 {
   
 
     #card-from {
-        font-family: 'LoewNextArabicRegular'
+        font-family: 'LoewNextArabicThin'
     }
 
 
     #card-title {
-        font-family: 'QuicheFineRegular'
+        font-family: 'LoewNextThin'
     }
 
   #card-container {
@@ -60,13 +75,15 @@ h2, h3 {
   #card-title {
     position: absolute;
 
-    top:47%;
-    left: 35%;
+    top:45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
   #card-from {
     position: absolute;
     top: 40%;
-      left: 35%;
+      left: 50%;
     text-align: right;
+    transform: translateX(-50%) translateY(-50%);
   }

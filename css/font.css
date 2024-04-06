@@ -13,3 +13,7 @@
     src: url('../fonts/QuicheFine-Regular.ttf');
 }
 
+@font-face {
+    font-family: "LoewNextegular";
+    src: url('../fonts/LoewNext-Regular.ttf');
+}
