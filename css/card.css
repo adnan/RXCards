@@ -1,12 +1,9 @@
-@font-face {
-    font-family: "LoewNextArabicRegular";
-    src: url('../fonts/LoewNextArabic-Regular.ttf');
-}
 
 @font-face {
-    font-family: "LoewNextArabicExtraBold";
-    src: url('../fonts/LoewNextArabic-ExtraBold.ttf');
+    font-family: "LoewNextArabicLight";
+    src: url('../fonts/LoewNextArabic-Light.otf');
 }
+
 
 @font-face {
     font-family: "QuicheFineRegular";
@@ -14,20 +11,9 @@
 }
 
 @font-face {
-    font-family: "LoewNextRegular";
-    src: url('../fonts/LoewNext-Regular.otf');
+    font-family: "LoewNextLight";
+    src: url('../fonts/LoewNext-Light.otf');
 }
-
-@font-face {
-    font-family: "LoewNextThin";
-    src: url('../fonts/LoewNext-Thin.otf');
-}
-
-@font-face {
-    font-family: "LoewNextArabicThin";
-    src: url('../fonts/LoewNextArabic-Thin.otf');
-}
-
 
 
 h2, h3 {
@@ -49,11 +35,11 @@ h2, h3 {
   
 
     #card-from {
-        font-family: 'LoewNextArabicThin'
+        font-family: 'LoewNextArabicLight'
     }
 
     #card-title {
-        font-family: 'LoewNextThin'
+        font-family: 'LoewNextLight'
     }
 
   #card-container {
