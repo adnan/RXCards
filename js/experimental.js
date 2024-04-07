@@ -27,7 +27,7 @@ function downloadURI(uri, name) {
 saveButton.addEventListener('click', function(event) {
   event.preventDefault();
 
-  let scale = 5;
+  let scale = 2;
   let style = {
       transform: `scale(${scale})`,
       transformOrigin: 'top left',
