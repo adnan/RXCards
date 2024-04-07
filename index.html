@@ -23,11 +23,11 @@
 <br>
 		<div class="form-container">
 				<form>
-					<label for="title" class="input-label"">Name:</label>
+					<label for="title" class="input-label">Name:</label>
 					<input type="text" id="title" name="title" class="input-box">
 					
-                   <!-- <label hidden="true" for="from">Arabic Name:</label>-->
-					<input hidden="true" type="text" id="from" name="from">
+                    <label for="from" class="input-label">Arabic Name:</label>
+					<input type="text" id="from" name="from" class="input-box">
 
 					<button id="save-button">Download Card</button>
 				</form>
@@ -40,8 +40,10 @@
 			
 		</div>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-		<script src="./js/main.js"></script>
+        <script src="./js/FileSaver.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.3.0/dom-to-image-more.min.js"></script> 
+
+		<script src="./js/experimental.js"></script>
 
 	</body>
 </html>

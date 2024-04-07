@@ -24,20 +24,23 @@ function downloadURI(uri, name) {
   link.click();
 }
 
-function saveScreenshot(canvas) {
-  const fileName = "image";
-  const link = document.createElement("a");
-  link.download = fileName + ".jpg";
-  console.log(canvas);
-  canvas.toBlob(function (blob) {
-      console.log(blob);
-      link.href = URL.createObjectURL(blob);
-      link.click();
-  });
-}
-
 saveButton.addEventListener('click', function(event) {
   event.preventDefault();
 
-  html2canvas(cardContainer).then(saveScreenshot);
-  });
+  let scale = 5;
+  let style = {
+      transform: `scale(${scale})`,
+      transformOrigin: 'top left',
+      width: cardContainer.clientWidth + 'px', // use original width of DOM element to avoid part of the image being cropped out
+      height: cardContainer.clientHeight + 'px' // use original height of DOM element
+  };
+
+  domtoimage.toBlob(cardContainer,{
+    width: cardContainer.clientWidth * scale,
+ height: cardContainer.clientHeight * scale,
+ style: style})
+  .then(function (blob) {
+    window.saveAs(blob, 'EidCard.jpg');
+});
+
+});
