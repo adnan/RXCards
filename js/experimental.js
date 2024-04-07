@@ -10,6 +10,16 @@ var saveButton = document.getElementById('save-button');
 
 formTitle.addEventListener('keyup', function(event) {
   cardTitle.innerText = event.target.value;
+
+  formFrom.value = event.target.value;
+  cardFrom.innerText = event.target.value;
+
+
+  cardFrom.innerText = formFrom.value
+
+  var event = new Event('change');
+  cardFrom.dispatchEvent(event);
+
 })
 
 formFrom.addEventListener('keyup', function(event) {
