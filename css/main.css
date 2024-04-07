@@ -86,10 +86,9 @@ body {
   
 
   #card-container {
-    margin: auto;
+    margin: none;
     width: 869px;
     max-height: 1086px;
-    border: 1px solid grey;
   }
   
   .form-container {

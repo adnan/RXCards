@@ -14,6 +14,7 @@ formTitle.addEventListener('keyup', function(event) {
 
   formFrom.value = event.target.value;
 
+  
 
 })
 
@@ -43,7 +44,7 @@ saveButton.addEventListener('click', function(event) {
   let style = {
       transform: `scale(${scale})`,
       transformOrigin: 'top left',
-      width: cardContainer.clientWidth + 'px', // use original width of DOM element to avoid part of the image being cropped out
+      width: 869  + 'px', // use original width of DOM element to avoid part of the image being cropped out
       height: cardContainer.clientHeight + 'px' // use original height of DOM element
   };
 
@@ -52,7 +53,7 @@ saveButton.addEventListener('click', function(event) {
  height: cardContainer.clientHeight * scale,
  style: style})
   .then(function (blob) {
-    window.saveAs(blob, 'EidCard.jpg');
+    window.saveAs(blob, 'EidCard.png');
 });
 
 });
