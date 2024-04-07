@@ -19,16 +19,26 @@
         <div class="header">
             <img src="./img/logo.png" alt="logo" />
             <h1>Eid Greeting Card</h1>
+</div>
+
+<br/>
+<div class="instructions">
+	<h5>1. Type your name in English</h5>
+			<h5>2. Click on your name in the Arabic textbox and choose an option</h5>
+			<h5>3. Click Update Card and then Download Card</h5>
+			</h4>
           </div>
-<br>
+		</div>
+		
 		<div class="form-container">
 				<form>
-					<label for="title" class="input-label">Name:</label>
+					<label for="title" class="input-label">Engish Name:</label>
 					<input type="text" id="title" name="title" class="input-box">
 					
                     <label for="from" class="input-label">Arabic Name:</label>
 					<input type="text" id="from" name="from" class="input-box">
-
+<br/><br/>
+					<button id="update-button">Update Card</button> <br/>
 					<button id="save-button">Download Card</button>
 				</form>
 		</div>
@@ -49,8 +59,11 @@
 <script type="text/javascript">
   if (typeof(Yamli) == "object" && Yamli.init( { uiLanguage: "en" , startMode: "onOrUserDefault" } ))
   {
-    Yamli.yamlify( "from", { settingsPlacement: "inside", showTutorialLink: false, showDirectionLink: false
- } );
+    Yamli.yamlify( "from", { settingsPlacement: "inside", showTutorialLink: false, showDirectionLink: false, 
+	generateOnChangeEvent: true, settingsColor: 'red'
+ 
+
+} );
   }
 </script>
 <!-- YAMLI CODE END -->

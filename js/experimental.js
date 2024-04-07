@@ -7,18 +7,13 @@ var formTitle = document.getElementById('title');
 var formFrom = document.getElementById('from');
 
 var saveButton = document.getElementById('save-button');
+var updateButton = document.getElementById('update-button');
 
 formTitle.addEventListener('keyup', function(event) {
   cardTitle.innerText = event.target.value;
 
   formFrom.value = event.target.value;
-  cardFrom.innerText = event.target.value;
 
-
-  cardFrom.innerText = formFrom.value
-
-  var event = new Event('change');
-  cardFrom.dispatchEvent(event);
 
 })
 
@@ -33,6 +28,13 @@ function downloadURI(uri, name) {
   link.href = uri;
   link.click();
 }
+
+
+updateButton.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  cardFrom.innerText = formFrom.value
+});
 
 saveButton.addEventListener('click', function(event) {
   event.preventDefault();
