@@ -1,154 +1,162 @@
 
 
 h2, h3 {
-    color: white;
-    font-family: 'QuicheFineRegular';
-  }
-  h2 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  
-  }
-  p {
-    font-size: 1.3rem;
-    padding-left: 1rem;
-  }
-  
-    #card-from {
-        font-family: 'LoewNextArabicLight'
-    }
+  color: white;
+  font-family: 'QuicheFineRegular';
+}
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 3.6rem;
 
-
-    #card-title {
-        font-family: 'LoewNextLight'
-    }
-
-  #card-container {
-    background-color: white;
-    position: relative;
-    text-align: center;
-  }
-  
-  img {
-    height: 1086px;
-    width: 869px;
-    margin: 0;
-    float: center;
-    object-fit: cover;
-  }
-  
-  
-  #card-title {
-    position: absolute;
-
-    top:45%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-
+}
+p {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   #card-from {
-    position: absolute;
-    top: 40%;
-      left: 50%;
-    text-align: right;
-    transform: translateX(-50%) translateY(-50%);
+      font-family: 'LoewNextArabicLight'
   }
+
+
+  #card-title {
+      font-family: 'LoewNextLight'
+  }
+
+#card-container {
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+img {
+  height: 1086px;
+  width: 869px;
+  margin: 0;
+  float: center;
+  object-fit: cover;
+}
+
+
+#card-title {
+  position: absolute;
+
+  top:45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#card-from {
+  position: absolute;
+  top: 40%;
+    left: 50%;
+  text-align: right;
+  transform: translateX(-50%) translateY(-50%);
+}
 
 body {
 
-    font-family: 'QuicheFineRegular';
-    margin: auto;
-    padding: 4rem;
-    width: 1000px;
-    font-size: 16px;
-    color: white;
-    background-color: white;
-    background-image: url("../img/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  }
-  
-  .header img {
-    float: left;
-    width: 190px;
-    height: 64px;
-  }
-  
-  .header h1 {
-    position: relative;
-    top: 18px;
-    left: 10px;
-  }
-  
+  font-family: 'QuicheFineRegular';
+  margin: auto;
+  padding: 4rem;
+  width: 1000px;
+  font-size: 16px;
+  color: white;
+  background-color: white;
+  background-image: url("../img/background.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
 
-  #card-container {
-    margin: none;
-    width: 869px;
-    max-height: 1086px;
-  }
-  
-  .form-container {
-    margin: 2rem 7%;
-    align-content: center;
-  
-  }
-  
-  .instructions {
+.header img {
+  float: left;
+  width: 190px;
+  height: 64px;
+}
 
-    margin: 2rem 7%;
-    align-content: center;
-  }
-
-  .input-label {
-
-    font-size:26px;
-  }
-
-  .input-box {
-    
-    height: 60px !important;
-    width: 600px;
-
-    font-size:26px;
-
-  }
-
-  button {
-
-    height: 60px !important;
-    width: 600px;
-
-    font-size:16px;
-  }
-  
-  form, input, textarea, select {
-    width: 400px;
-    margin: 1rem 0;
-  
-  }
-  
-  input:focus, textarea:focus, select:focus {
-    border-color: darkgreen !important;
-  }
-  
-  
-  button {
-    background-color: white;
-    color: black;
-    border: white;
-  }
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
 
 
-  button:hover {
-    background-color: black;
-    color: white;
-    border: white;
-  }
+#card-container {
+  margin: none;
+  width: 869px;
+  max-height: 1086px;
+}
+
+
+.instructions {
+
+  margin: 2rem 7%;
+  align-content: center;
+}
+
+.input-label {
+
+  font-size:26px;
+}
+
+.input-box {
   
-  h1 {
-    text-align: center;
-  }
+  height: 50px !important;
+  width: 500px;
+
+  font-size:26px;
+
+}
+
+button {
+
+  height: 50px !important;
+  width: 500px;
+
+  font-size:16px;
+}
+
+
+
+input:focus, textarea:focus, select:focus {
+  border-color: darkgreen !important;
+}
+
+
+button {
+  background-color: white;
+  color: black;
+  border: white;
+}
+
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Adjust size of logo */
+.header img {
+  width: 125px; /* Change as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+/* Move h1 to a new line */
+.header h1 {
+  display: block;
+  margin-top: 20px; /* Adjust spacing as needed */
+}
