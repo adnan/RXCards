@@ -9,6 +9,22 @@ var formFrom = document.getElementById('from');
 var saveButton = document.getElementById('save-button');
 var updateButton = document.getElementById('update-button');
 
+
+function loadURLParams() {
+  const params = new URLSearchParams(document.location.search);
+const en = params.get("en");
+const ar = params.get("ar");
+console.info(en);
+console.info(ar);
+
+formTitle.value = en;
+formFrom.value = ar;
+
+cardFrom.innerText = ar;
+cardTitle.innerText = en;
+
+}
+
 formTitle.addEventListener('keyup', function(event) {
   cardTitle.innerText = event.target.value;
 
