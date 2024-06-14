@@ -1,84 +1,76 @@
 
 @font-face {
-    font-family: "LoewNextArabicLight";
-    src: url('../fonts/LoewNextArabic-Light.otf');
+  font-family: "LoewNextArabicRegular";
+  src: url('../fonts/LoewNextArabic-Regular.ttf');
 }
 
 
 @font-face {
-    font-family: "QuicheFineRegular";
-    src: url('../fonts/QuicheSans-Regular.otf');
+  font-family: "QuicheFineRegular";
+  src: url('../fonts/QuicheSans-Regular.otf');
 }
 
 @font-face {
-    font-family: "LoewNextLight";
-    src: url('../fonts/LoewNext-Light.otf');
+  font-family: "LoewNextRegular";
+  src: url('../fonts/LoewNext-Regular.otf');
 }
-@font-face {
-  font-family: "LoewNextBold";
-  src: url('../fonts/LoewNext-Bold.otf');
-}
-@font-face {
-  font-family: "LoewNextArabicBold";
-  src: url('../fonts/LoewNextArabic-Bold.ttf');
-}
-
 
 
 h2, h3 {
-    color: white;
-    font-family: 'QuicheFineRegular';
-  }
-  h2 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.6rem;
-  
-  }
-  p {
-    font-size: 1.3rem;
-    padding-left: 1rem;
-  }
-  
+  color: white;
+  font-family: 'QuicheFineRegular';
+}
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.8rem;
 
-    #card-from {
-        font-family: 'LoewNextArabicBold'
-    }
+}
+p {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
 
-    #card-title {
-        font-family: 'LoewNextBold'
-    }
-
-  #card-container {
-    background-color: white;
-    position: relative;
-    text-align: center;
-  }
-  
-  img {
-    height: 1086px;
-    width: 869px;
-    margin: 0;
-    float: center;
-    object-fit: cover;
-  }
-  
-  
-  #card-title {
-    position: absolute;
-
-    top:38%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    letter-spacing: 0.5px;
-  }
 
   #card-from {
-    position: absolute;
-    top: 32%;
-      left: 50%;
-    text-align: right;
-    transform: translateX(-50%) translateY(-50%);
+      font-family: 'LoewNextArabicRegular'
   }
+
+  #card-title {
+      font-family: 'LoewNextRegular'
+  }
+
+#card-container {
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+img {
+  height: 1086px;
+  width: 869px;
+  margin: 0;
+  float: center;
+  object-fit: cover;
+}
+
+
+#card-title {
+  position: absolute;
+
+  top:37%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  letter-spacing: 0.5px;
+}
+
+#card-from {
+  position: absolute;
+  top: 33.5%;
+    left: 50%;
+  text-align: right;
+  transform: translateX(-50%) translateY(-50%);
+}
